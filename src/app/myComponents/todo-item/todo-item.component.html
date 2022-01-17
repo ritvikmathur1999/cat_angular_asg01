@@ -1,0 +1,12 @@
+<div class="card p-2 mb-2" id="1">
+    <div class="my-3">
+        <h5 [ngClass]= "{'strike': !todo.active}" >{{ todo.title }}</h5>
+        <p>{{ todo.desc }}</p>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="done">
+            <label class="form-check-label mb-1" for="exampleCheck1" (onClick)="onClickSelectionBox(todo)">Mark as done</label>
+          </div>
+        <div class="button"><button class="btn btn-sm btn-danger" (click)="onClick(todo)">Delete</button></div>
+        
+    </div>
+</div>
