@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo-list';
+  myMsg = " ";
+  newMsg = "Hi, Ritvik"
+  constructor(){
+    setTimeout(() => {
+      this.myMsg = this.newMsg;
+    }, 2000);
+  }
 }
