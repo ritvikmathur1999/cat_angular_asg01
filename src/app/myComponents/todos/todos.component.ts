@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { json } from 'node_modules copy/@angular-devkit/core/src';
+import { json } from 'node_modules/@angular-devkit/core/src';
 import Todo from "../../todo"
 @Component({
   selector: 'app-todos',
