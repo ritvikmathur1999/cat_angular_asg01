@@ -1,0 +1,18 @@
+.container{
+    margin: 10px;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: auto;
+    width: auto;
+    flex-wrap:wrap;
+}
+
+p{
+    margin: 0px;
+}
+.checkbox{
+    margin: 0px;
+}

@@ -1,12 +1,26 @@
-/* h5{
-    color: white;
+.card-main{
+    display: flex;
+    padding: 10px;
+    border-radius: 3px;
+    background-color:rgb(238, 250, 128);
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
-p{
-    color: white;
-} */
 
-.card{
-    padding-top: 0px;
-    margin-top: 0px;
-    background-color:rgb(210, 210, 247);
+h5,p{
+    margin: 10px;
+}
+.checkbox{
+    margin: 7px;
+}
+
+.inline-ops{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button,.checkbox{
+    display: inline-flex;
+    margin-right: 10px;  
 }
