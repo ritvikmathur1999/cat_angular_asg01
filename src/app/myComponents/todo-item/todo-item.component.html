@@ -2,14 +2,13 @@
     <div class="card-inner">
         <h5 [ngClass]="{'strike': !todo.active}">{{ todo.title }}</h5>
         <p>{{ todo.desc }}</p>
+        <br>
         <div class="inline-ops">
-        <div class="checkbox">
-            <input type="checkbox" class="form-input" id="done">
-            <label class="form-check-label mb-1" (onClick)="onClickSelectionBox(todo)">Mark as done</label>
+            <div class="checkbox">
+                <input type="checkbox" class="form-input" id="done">
+                <label class="form-input-label" (onClick)="onClickSelectionBox(todo)">Mark as done</label>
+            </div>
+            <div class="button"><button class="btn" (click)="onClick(todo)">Delete</button></div>
         </div>
-        <div class="button"><button class="btn" (click)="onClick(todo)">Delete</button></div>
     </div>
-    </div>
-
-
 </div>

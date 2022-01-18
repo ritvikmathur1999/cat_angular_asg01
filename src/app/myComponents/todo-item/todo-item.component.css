@@ -3,24 +3,20 @@
     padding: 10px;
     border-radius: 3px;
     background-color:rgb(238, 250, 128);
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
+    width: auto;
 }
 
 h5,p{
-    margin: 10px;
+    margin: 2px;
+    word-wrap:break-word;
+    /* font-size:2vh; */
 }
-.checkbox{
-    margin: 7px;
-}
-
 .inline-ops{
     display: flex;
     justify-content: space-between;
 }
 
-.button,.checkbox{
-    display: inline-flex;
-    margin-right: 10px;  
+.checkbox{
+    margin-right: 10px;
 }
