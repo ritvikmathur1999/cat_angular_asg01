@@ -1,4 +1,5 @@
 $font-color:white;
+$bg-color: rgb(235, 255, 55);
 
 
 .container{
@@ -16,6 +17,9 @@ $font-color:white;
     width: auto;
     flex-wrap:wrap;
     justify-content:space-between;
+    .msg{
+        color: $font-color;
+    }
 }
 
 p{
@@ -23,4 +27,16 @@ p{
 }
 .checkbox{
     margin: 0px;
+}
+
+.op{
+    display: flex;
+    justify-content: space-between;
+
+    button{
+        height: 1.5rem;
+        width: 5rem;
+        background-color: $bg-color;
+        border-style:none ;
+    }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { json } from 'node_modules/@angular-devkit/core/src';
 import Todo from "../../todo"
 @Component({
@@ -9,6 +9,7 @@ import Todo from "../../todo"
 export class TodosComponent implements OnInit {
   localItem:string
   todos:Todo[];
+  @Input() todo:Todo; 
 
   constructor() {
     this.localItem = localStorage.getItem("todos");
@@ -38,6 +39,11 @@ export class TodosComponent implements OnInit {
    }
 
   ngOnInit(): void {
+  }
+
+  onClick(todo:Todo)
+  {
+    this.todos=[];
   }
 
 }

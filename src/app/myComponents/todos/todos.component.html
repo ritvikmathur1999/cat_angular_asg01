@@ -1,9 +1,13 @@
 <div class="container">
     <app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
-    <h3>Your Notes</h3>
+    <div class="op">
+        <h3>Your Notes</h3>
+        <button (click)="onClick(todo)">Delete All</button>
+    </div>
+    
     <div class="card-container">
 
-        <div *ngIf="this.todos.length===0; else elseBlock">No list to show!</div>
+        <div class="msg" *ngIf="this.todos.length===0; else elseBlock">No list to show!</div>
         <ng-template #elseBlock>
             <div *ngFor="let todo of todos">
                 <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)"></app-todo-item>
