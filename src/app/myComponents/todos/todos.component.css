@@ -1,6 +1,10 @@
 .container{
     margin: 10px;
 }
+
+.container h3{
+    color: white;
+}
 .card-container{
     display: flex;
     flex-direction: row;
@@ -8,6 +12,8 @@
     height: auto;
     width: auto;
     flex-wrap:wrap;
+    color: white;
+    justify-content:space-between;
 }
 
 p{
