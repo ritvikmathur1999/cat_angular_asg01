@@ -1,18 +1,20 @@
+$font-color:white;
+
+
 .container{
-    margin: 10px;
+    margin: 1rem;
 }
 
 .container h3{
-    color: white;
+    color: $font-color;
 }
 .card-container{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 0.35rem;
     height: auto;
     width: auto;
     flex-wrap:wrap;
-    color: white;
     justify-content:space-between;
 }
 

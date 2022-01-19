@@ -3,7 +3,7 @@ import Todo from 'src/app/todo';
 @Component({
   selector: 'app-add-todo',
   templateUrl: './add-todo.component.html',
-  styleUrls: ['./add-todo.component.css']
+  styleUrls: ['./add-todo.component.scss']
 })
 export class AddTodoComponent implements OnInit {
   @Output() todoAdd: EventEmitter<Todo> = new EventEmitter();

@@ -1,0 +1,16 @@
+$comp-bg-color: rgb(235, 255, 55);
+
+.nav-bar {
+  display: flex;
+  background-color: $comp-bg-color;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  height: 2rem;
+  justify-content: center;
+  border-bottom: 3px solid white;
+
+  b{
+    margin: auto;
+   text-align: center;
+  }
+}
