@@ -2,13 +2,19 @@ $border-color: white;
 $bg-color: rgb(235, 255, 55);
 $border-radius: 0.3rem;
 $border-width: 0.2rem;
+$bg-gradient-img:linear-gradient(to bottom, #fb920c, #fa9a24, #faa235, #f9a945, #f9b053);
 
 .card-main {
   display: flex;
   padding: 10px;
   // border: $border-width solid $border-color;
   border-radius: $border-radius;
-  background-color: $bg-color;
+  background: rgb(247, 255, 28);
+  background: linear-gradient(
+    0deg,
+    rgba(247, 255, 28, 1) 40%,
+    rgba(255, 253, 145, 1) 100%
+  );
   justify-content: space-between;
   width: auto;
   height: auto;
@@ -26,19 +32,25 @@ $border-width: 0.2rem;
     display: flex;
     justify-content: space-between;
 
-    .checkbox {
+    .form-input-label {
+      font-size: 0.8rem;
       margin-right: 1rem;
     }
 
-    .form-input-label {
-      font-size: 0.6rem;
+    .form-input {
+      width: 0.7rem;
+      height: 0.6rem;
+      cursor: pointer;
+      margin-right: 0.2rem;
     }
 
-    .form-input {
-      width: 0.91rem;
-      height: 0.51rem;
-      cursor: pointer;
-      margin-right: 0px;
+    .delete-btn {
+      border-radius: 1rem;
+      border-style: none;
+      height: 1.8rem;
+      width: 3.5rem;
+      // background-color: purple;
+      background-image: $bg-gradient-img;
     }
   }
 }

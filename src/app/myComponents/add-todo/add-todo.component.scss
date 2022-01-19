@@ -1,7 +1,8 @@
 $bg-color:rgb(235, 255, 55);
 $border-color:white;
-$border-width:0.1rem;
+$border-width:0;
 $border-radius:0.3rem;
+$bg-gradient-img:linear-gradient(to bottom, #fb920c, #fa9a24, #faa235, #f9a945, #f9b053);
 
 .add-items-main {
   display: flex;
@@ -14,13 +15,23 @@ $border-radius:0.3rem;
   display: flex;
   justify-self: center;
   align-self: center;
+
+  .btnn{
+    border-radius: 1rem;
+    border-style: none;
+    height: 2rem;
+    width: 4rem;
+    background-image: $bg-gradient-img;
+  }
+
 }
 
 .add-items > * {
   padding: 1rem;
   font-weight: bold;
   border-radius: $border-radius;
-  background-color: $bg-color;
+  background: rgb(247,255,28);
+  background: linear-gradient(0deg, rgba(247,255,28,1) 40%, rgba(255,253,145,1) 100%);
   display: flex;
   border: $border-width solid $border-color;
   flex-direction: column;
@@ -35,6 +46,7 @@ $border-radius:0.3rem;
     border: $border-width solid $border-color;
     height: 1.5rem;
     padding: 0.5rem;
+
 
 }
 

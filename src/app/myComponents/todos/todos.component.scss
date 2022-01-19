@@ -1,42 +1,42 @@
-$font-color:white;
+$font-color: white;
 $bg-color: rgb(235, 255, 55);
 
-
-.container{
-    margin: 1rem;
+.container {
+  margin: 1rem;
 }
 
-.container h3{
+.container h3 {
+  color: $font-color;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.35rem;
+  height: auto;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .msg {
     color: $font-color;
-}
-.card-container{
-    display: flex;
-    flex-direction: row;
-    gap: 0.35rem;
-    height: auto;
-    width: auto;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    .msg{
-        color: $font-color;
-    }
+  }
 }
 
-p{
-    margin: 0px;
+p {
+  margin: 0px;
 }
-.checkbox{
-    margin: 0px;
+.checkbox {
+  margin: 0px;
 }
 
-.op{
-    display: flex;
-    justify-content: space-between;
+.op {
+  display: flex;
+  justify-content: space-between;
 
-    button{
-        height: 1.5rem;
-        width: 5rem;
-        background-color: $bg-color;
-        border-style:none ;
-    }
+  button {
+    height: 1.5rem;
+    width: 5rem;
+    background-color: $bg-color;
+    border-style: none;
+    border-radius: 1rem;
+  }
 }
